@@ -52,3 +52,12 @@ It offers secure access control, server moderation tools, and easy management ‚Ä
    ```bash
    git clone https://github.com/kuysHamdie/AETHERBOTPY.git
    cd AETHERBOTPY
+
+---
+
+## üìù License
+This project is licensed under the [MIT License](LICENSE).  
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+You are free to use, modify, and distribute it.
