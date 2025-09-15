@@ -1,41 +1,54 @@
-# 🤖 Discord Admin Bot
+# AETHERBOTPY
 
-A powerful and customizable **Discord server management bot** built with [discord.py](https://discordpy.readthedocs.io).  
-This bot provides moderation, server info, and custom access control for a safe and well-managed community.
+AETHERBOTPY is a customizable Discord admin bot built with **discord.py**.  
+It offers secure access control, server moderation tools, and easy management — perfect for communities that want safety, control, and automation.
 
 ---
 
 ## ✨ Features
 
-- 🔒 **Access Control**
-  - Only the **owner**, **admins**, or **whitelisted users** can use most commands.
-  - Owner can manage who is whitelisted.
+- **Access Control**  
+  Only the owner, server admins, or whitelisted users can use most commands.
 
-- 🔨 **Moderation Commands**
-  - `!kick @user [reason]` → Kick a member
-  - `!ban @user [reason]` → Ban a member
-  - `!addrole @user @role` → Give a role
-  - `!removerole @user @role` → Remove a role
+- **Moderation**  
+  - Kick members  
+  - Ban members  
+  - Assign roles  
+  - Remove roles
 
-- ⚙️ **Owner Only Commands**
-  - `!shutdown` → Shut down the bot
-  - `!restart` → Restart the bot
-  - `!setstatus <type> <text>` → Change the bot’s activity/status
-  - `!addwhitelist @user` → Add a user to whitelist
-  - `!removewhitelist @user` → Remove a user from whitelist
-  - `!showwhitelist` → Show all whitelisted users
+- **Info & Utility Commands**  
+  - Check if bot is online (`!status`)  
+  - Get server info (`!serverinfo`)  
+  - Get user info (`!userinfo @user`)  
+  - Ping latency (`!ping`)  
 
-- 📊 **Info Commands**
-  - `!status` → Check if the bot is online
-  - `!serverinfo` → Show server information
-  - `!userinfo [@user]` → Show user details
-  - `!ping` → Check bot latency
+- **Owner-only Controls**  
+  - `!shutdown` — shut the bot down  
+  - `!restart` — restart the bot  
+  - `!setstatus <type> <text>` — change bot’s status message  
+  - Whitelist management: add/remove/show allowed users
+
+- **Persistence**  
+  - Bot remembers its last status after restarts  
+  - Whitelist is saved so permissions persist between runs
 
 ---
 
-## 🚀 Getting Started
+## 📋 Prerequisites
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/discord-admin-bot.git
-cd discord-admin-bot
+- Python 3.9+  
+- `discord.py` library  
+- A Discord Bot account (token)  
+- Enabled intents:
+  - Message Content Intent  
+  - Server Members Intent  
+  - (Others depending on features: presence, etc.)
+
+---
+
+## 🛠 Setup & Installation
+
+1. Clone this repo:  
+   ```bash
+   git clone https://github.com/kuysHamdie/AETHERBOTPY.git
+   cd AETHERBOTPY
